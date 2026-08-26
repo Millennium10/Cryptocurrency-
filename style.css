@@ -1,0 +1,886 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f8;
+    color: #17202a;
+}
+
+/* =========================
+   GENERAL
+========================= */
+
+.hidden {
+    display: none !important;
+}
+
+
+/* =========================
+   LOGIN PAGE
+========================= */
+
+.login-page {
+    width: 100%;
+    min-height: 100vh;
+    min-height: 100dvh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    overflow-x: hidden;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 420px;
+
+    background: #ffffff;
+
+    padding: 35px 25px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.10);
+}
+
+.logo {
+    width: 55px;
+    height: 55px;
+
+    margin: 0 auto 18px;
+
+    border-radius: 50%;
+
+    background: #17202a;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.login-box h1 {
+    text-align: center;
+    font-size: 26px;
+}
+
+.subtitle {
+    text-align: center;
+
+    color: #7c8792;
+
+    margin-top: 7px;
+    margin-bottom: 22px;
+
+    font-size: 14px;
+}
+
+.demo-warning {
+    width: 100%;
+
+    text-align: center;
+
+    background: #fff3cd;
+    color: #856404;
+
+    border: 1px solid #ffeeba;
+
+    padding: 10px;
+
+    border-radius: 8px;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.login-box label {
+    display: block;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    margin-top: 17px;
+    margin-bottom: 7px;
+}
+
+.login-box input {
+    width: 100%;
+    height: 48px;
+
+    border: 1px solid #dce1e5;
+
+    border-radius: 8px;
+
+    padding: 0 13px;
+
+    /*
+       Important for iPhone:
+       16px prevents Safari
+       from automatically zooming
+       when the input is selected.
+    */
+    font-size: 16px;
+
+    outline: none;
+
+    background: #ffffff;
+
+    color: #17202a;
+
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.login-box input:focus {
+    border-color: #17202a;
+}
+
+
+/* =========================
+   PASSWORD
+========================= */
+
+.password-box {
+    position: relative;
+
+    width: 100%;
+}
+
+.password-box input {
+    padding-right: 65px;
+}
+
+#showPassword {
+    position: absolute;
+
+    right: 10px;
+    top: 14px;
+
+    border: none;
+
+    background: transparent;
+
+    color: #17202a;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    padding: 3px;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   ERROR
+========================= */
+
+.error {
+    min-height: 18px;
+
+    color: #d64545;
+
+    font-size: 13px;
+
+    margin-top: 12px;
+
+    text-align: center;
+}
+
+
+/* =========================
+   LOGIN BUTTON
+========================= */
+
+.login-button {
+    width: 100%;
+    height: 50px;
+
+    margin-top: 15px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #17202a;
+    color: white;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    -webkit-appearance: none;
+}
+
+.login-button:active {
+    transform: scale(0.98);
+}
+
+
+/* =========================
+   DEMO NOTE
+========================= */
+
+.demo-note {
+    text-align: center;
+
+    color: #929ba4;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+
+    margin-top: 25px;
+}
+
+
+/* =========================
+   DASHBOARD
+========================= */
+
+.dashboard-page {
+    width: 100%;
+    min-height: 100vh;
+    min-height: 100dvh;
+
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    padding: 20px 14px 40px;
+}
+
+
+/* =========================
+   DEMO LABEL
+========================= */
+
+.demo-label {
+    width: 100%;
+
+    background: #fff3cd;
+    color: #856404;
+
+    border: 1px solid #ffeeba;
+
+    padding: 10px;
+
+    text-align: center;
+
+    border-radius: 8px;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+.small-text {
+    color: #7c8792;
+
+    font-size: 14px;
+
+    margin-bottom: 5px;
+}
+
+header h1 {
+    font-size: 27px;
+
+    max-width: 240px;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+.profile {
+    width: 50px;
+    height: 50px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #17202a;
+    color: white;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   BALANCE CARD
+========================= */
+
+.balance-card {
+    width: 100%;
+
+    background: #17202a;
+    color: white;
+
+    padding: 28px 22px;
+
+    border-radius: 18px;
+
+    margin-bottom: 30px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.12);
+
+    overflow: hidden;
+}
+
+.balance-card p {
+    color: #aeb7c1;
+
+    font-size: 14px;
+}
+
+.balance-card h2 {
+    font-size: 36px;
+
+    margin: 10px 0;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+.profit {
+    color: #62d68b;
+
+    font-size: 14px;
+}
+
+.card-bottom {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 10px;
+
+    margin-top: 30px;
+
+    padding-top: 15px;
+
+    border-top: 1px solid #39434d;
+
+    color: #aeb7c1;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   HEADINGS
+========================= */
+
+h3 {
+    margin-bottom: 15px;
+
+    font-size: 19px;
+}
+
+
+/* =========================
+   ASSETS
+========================= */
+
+.assets {
+    width: 100%;
+
+    background: white;
+
+    border-radius: 15px;
+
+    padding: 5px 18px;
+
+    margin-bottom: 30px;
+
+    overflow: hidden;
+}
+
+.asset {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 18px 0;
+
+    border-bottom: 1px solid #edf0f2;
+}
+
+.asset:last-child {
+    border-bottom: none;
+}
+
+.coin-icon {
+    width: 43px;
+    height: 43px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.btc {
+    background: #f7931a;
+}
+
+.usdt {
+    background: #26a17b;
+}
+
+.asset-info {
+    flex: 1;
+
+    min-width: 0;
+}
+
+.asset-info strong {
+    display: block;
+
+    font-size: 14px;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+.asset-info span {
+    display: block;
+
+    color: #89939e;
+
+    font-size: 12px;
+
+    margin-top: 4px;
+}
+
+.asset-value {
+    flex-shrink: 0;
+
+    text-align: right;
+
+    max-width: 45%;
+}
+
+.asset-value strong {
+    display: block;
+
+    font-size: 13px;
+
+    white-space: nowrap;
+}
+
+.asset-value span {
+    display: block;
+
+    color: #89939e;
+
+    font-size: 12px;
+
+    margin-top: 4px;
+
+    white-space: nowrap;
+}
+
+
+/* =========================
+   TRANSACTIONS TITLE
+========================= */
+
+.section-title {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.section-title h3 {
+    min-width: 0;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+.section-title span {
+    color: #89939e;
+
+    font-size: 12px;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================
+   TRANSACTIONS
+========================= */
+
+.transactions {
+    width: 100%;
+
+    background: white;
+
+    border-radius: 15px;
+
+    padding: 5px 18px;
+
+    margin-bottom: 20px;
+
+    overflow: hidden;
+}
+
+.transaction {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 17px 0;
+
+    border-bottom: 1px solid #edf0f2;
+}
+
+.transaction:last-child {
+    border-bottom: none;
+}
+
+.transaction-icon {
+    width: 40px;
+    height: 40px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 20px;
+
+    font-weight: bold;
+}
+
+.received {
+    background: #e6f7ed;
+
+    color: #1e9b55;
+}
+
+.sent {
+    background: #fdeaea;
+
+    color: #d64545;
+}
+
+.transaction-info {
+    flex: 1;
+
+    min-width: 0;
+}
+
+.transaction-info strong {
+    display: block;
+
+    font-size: 13px;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+.transaction-info span {
+    display: block;
+
+    color: #89939e;
+
+    font-size: 11px;
+
+    margin-top: 4px;
+}
+
+.transaction-amount {
+    flex-shrink: 0;
+
+    text-align: right;
+
+    max-width: 42%;
+}
+
+.transaction-amount strong {
+    display: block;
+
+    font-size: 12px;
+
+    white-space: nowrap;
+}
+
+.transaction-amount span {
+    display: block;
+
+    color: #89939e;
+
+    font-size: 11px;
+
+    margin-top: 4px;
+}
+
+
+/* =========================
+   LOGOUT
+========================= */
+
+.logout-button {
+    width: 100%;
+
+    height: 48px;
+
+    border: 1px solid #dce1e5;
+
+    background: white;
+
+    color: #17202a;
+
+    border-radius: 9px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.logout-button:active {
+    transform: scale(0.98);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    width: 100%;
+
+    text-align: center;
+
+    margin-top: 25px;
+
+    color: #929ba4;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media (max-width: 400px) {
+
+    .login-page {
+        padding: 14px;
+    }
+
+    .login-box {
+        padding: 28px 18px;
+    }
+
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    header h1 {
+        font-size: 24px;
+
+        max-width: 210px;
+    }
+
+    .balance-card {
+        padding: 24px 18px;
+    }
+
+    .balance-card h2 {
+        font-size: 29px;
+    }
+
+    .assets,
+    .transactions {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .asset-value strong,
+    .transaction-amount strong {
+        font-size: 11px;
+    }
+}
+
+
+/* =========================
+   VERY SMALL PHONES
+========================= */
+
+@media (max-width: 350px) {
+
+    .container {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .balance-card h2 {
+        font-size: 26px;
+    }
+
+    .coin-icon {
+        width: 38px;
+        height: 38px;
+        font-size: 19px;
+    }
+
+    .transaction-icon {
+        width: 36px;
+        height: 36px;
+        font-size: 17px;
+    }
+
+    .asset,
+    .transaction {
+        gap: 7px;
+    }
+}
+
+.withdraw-button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 9px;
+    background: #17202a;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.withdraw-message {
+    background: #fff3cd;
+    border: 1px solid #ffeeba;
+    color: #856404;
+    padding: 18px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.withdraw-message strong {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.withdraw-message p {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.withdraw-message button {
+    border: none;
+    background: #17202a;
+    color: white;
+    padding: 9px 18px;
+    border-radius: 7px;
+}
