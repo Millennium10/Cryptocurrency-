@@ -13,8 +13,8 @@ const users = [
     },
 
     {
-        username: "peter01",
-        password: "Demo456",
+        username: "Frantisekpazitny",
+        password: "Frantisek444",
         name: "František Pažitný",
         initials: "FP",
         balance: "$3,726,882.00",
