@@ -30,7 +30,7 @@ const users = [
 const translations = {
 
     en: {
-        loginSubtitle: "Sign in to your demo account",
+        loginSubtitle: "Sign in to your Crypto account",
         username: "Username",
         password: "Password",
         login: "Login",
